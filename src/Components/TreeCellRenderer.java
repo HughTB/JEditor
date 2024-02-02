@@ -19,11 +19,13 @@ public class TreeCellRenderer extends DefaultTreeCellRenderer{
 			boolean hasFocus) {
 
 		Component c = super.getTreeCellRendererComponent(tree, value,
-                selected, expanded, leaf, row, hasFocus);
+                sel, expanded, leaf, row, hasFocus);
 		
 		setOpaque(false);
 		setFont(new Font("Ubuntu", Font.PLAIN, 14));
 		
+//			c.setBackground(Color.GREEN);
+			
 		if(getText().equalsIgnoreCase("Files opened: ")){
 			return c;
 		}
